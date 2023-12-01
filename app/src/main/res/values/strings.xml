@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">TalentWood</string>
+    <!-- Login Screen -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forget_pass">Have you Forget your password?</string>
+    <string name="reset_pass">Reset password</string>
+    <string name="don_t_have_account">Don’t have an Account?</string>
+    <string name="register">Register</string>
+    <string name="or">or</string>
+    <string name="login_with">Login with</string>
+
+    <!-- Register Screen -->
+    <string name="enter_name">Enter your Name</string>
+    <string name="enter_email">Enter your Email</string>
+    <string name="enter_mobile">Enter your Mobile number</string>
+    <string name="enter_dob">Enter your Date of Birth</string>
+    <string name="select_gender">Select your Gender</string>
+    <string name="next">Next</string>
+    <string name="select_role">Select Your Role</string>
+    <string name="select_location">Select your Location</string>
+    <string name="select_district">Select your District</string>
+    <string name="enter_locality">Enter your Locality</string>
+    <string name="enter_pass">Enter your Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="previous">Previous</string>
+    <string name="submit">Submit</string>
+    <string name="have_account">Already have an account?</string>
+
+    <!-- Success Screen -->
+    <string name="welcome_club">Welcome to the club! You\'re officially in</string>
+    <string name="continuee">Continue</string>
+    <!-- Forget Password Screen -->
+    <string name="enter_email_mobile">Enter your Email Address or Mobile number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="back">Back</string>
+    <string name="reset_pass_">To reset your password, please enter the One-Time Password (OTP) that we sent to your email address. If you haven\'t received the OTP, please check your spam folder or request a new one.</string>
+    <string name="welcome">Welcome,</string>
+    <string name="welcome_desc">If you\'ve forgotten your password, don\'t worry! We\'ll help you to reset it. Please follow the step below:</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+
+    <!-- Reset Password Screen -->
+    <string name="reset_title">Enter your new password below. It must be at least 8 characters long and include a mix of letters, numbers, and special characters.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_desc">Enter your new password below. It must be at least 8 characters long and include a mix of letters, numbers, and special characters.</string>
+    <string name="password_changed">Your password has been changed successfully.</string>
+    <string name="back_login">Back to Login</string>
+    <!-- Intro Screen -->
+    <string name="showcasing_talent">Showcasing Talent</string>
+    <string name="dual_rewards">Dual Rewards</string>
+    <string name="engaging_experience">Engaging Experience</string>
+    <string name="welcome_user">Welcome User</string>
+    <string name="get_started">Get started</string>
+    <string name="intro_desc_1">Our app is a platform for new directors to showcase their creative skills and gain industry recognition.</string>
+    <string name="intro_desc_2">Audience members can invest in short films, supporting creators, and have a chance to win rewards exceeding their capital.</string>
+    <string name="intro_desc_3">By encouraging audience participation, we create a symbiotic relationship where both filmmakers and viewers benefit from the competition.</string>
+    <string name="intro_desc_4">Step into a world of Talentwood \n\n Lights, camera, join the action! 🎬 \n\n Discover, invest, and win with short films. Your cinematic adventure begins here!</string>
+    <string name="dot">•</string>
+
+    <string name="oscar_json">oscar.json</string>
+    <string name="money_json">money.json</string>
+    <string name="handshake_json">handshake.json</string>
+    <string name="talentwood_json">talentwood.json</string>
+
+    <string name="json_failure">animee.json</string>
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+</resources>

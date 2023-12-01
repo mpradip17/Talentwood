@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/launcher"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/top_container"
+        app:layout_constraintEnd_toEndOf="@+id/container_end"
+        app:layout_constraintStart_toStartOf="@+id/container_start"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/container_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/container_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/container_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_container_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/reset_pass"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/top_container"
+        app:layout_constraintBottom_toTopOf="@+id/tv_desc"
+        app:layout_constraintEnd_toEndOf="@+id/container_end"
+        app:layout_constraintStart_toStartOf="@+id/container_start" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/reset_password_desc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintBottom_toTopOf="@+id/et_pass"
+        app:layout_constraintEnd_toEndOf="@+id/container_end"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/container_start" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_pass"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/circular_edit_text"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Enter password"
+        android:imeOptions="actionNext"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc"
+        app:layout_constraintBottom_toTopOf="@+id/et_confirm_pass"
+        app:layout_constraintEnd_toEndOf="@id/container_end"
+        app:layout_constraintStart_toStartOf="@+id/container_start"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:textColor="@color/txtclr"
+        android:textColorHint="@color/txtclr"
+        android:textSize="@dimen/_10ssp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_confirm_pass"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/circular_edit_text"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Confirm Password"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toTopOf="@+id/container"
+        app:layout_constraintEnd_toEndOf="@id/container_end"
+        app:layout_constraintStart_toStartOf="@+id/container_start"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:textColor="@color/txtclr"
+        android:textColorHint="@color/txtclr"
+        android:textSize="@dimen/_10ssp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_otp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        android:backgroundTint="@color/btncolor"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/reset_password"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        app:cornerRadius="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@+id/container_start"
+        app:layout_constraintEnd_toEndOf="@+id/container_end"
+        app:layout_constraintTop_toBottomOf="@+id/container_middle"
+        app:shapeAppearanceOverlay="@style/MyShapeAppearance"
+        app:strokeColor="@color/btncolor"
+        app:strokeWidth="@dimen/_1sdp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

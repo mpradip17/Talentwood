@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_bg">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/container_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/container_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/showcasing_talent"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_17ssp"
+        app:layout_constraintEnd_toEndOf="@+id/container_end"
+        app:layout_constraintStart_toStartOf="@+id/container_start"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon"
+        app:srcCompat="@drawable/oscar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Our app is a platform for new directors to showcase their creative skills and gain industry recognition."
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toTopOf="@+id/dots"
+        app:layout_constraintEnd_toEndOf="@id/container_end"
+        app:layout_constraintStart_toStartOf="@id/container_start"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:srcCompat="@drawable/oscar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <LinearLayout
+        android:id="@+id/dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_end"
+        app:layout_constraintEnd_toEndOf="@id/container_end"
+        app:layout_constraintStart_toStartOf="@id/container_start">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_circle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="@string/dot"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_30ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_circle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="@string/dot"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_30ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_circle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="@string/dot"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_30ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_circle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="@string/dot"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_30ssp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        app:cornerRadius="@dimen/_5sdp"
+        app:icon="@drawable/right_arrow_white"
+        app:iconGravity="textEnd"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/container_end"
+        app:layout_constraintStart_toStartOf="@+id/container_start"
+        app:shapeAppearanceOverlay="@style/MyShapeAppearance"
+        app:strokeColor="@color/yellow"
+        app:strokeWidth="@dimen/_1sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
